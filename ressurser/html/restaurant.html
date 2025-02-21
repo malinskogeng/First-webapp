@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="../css/restaurant.css">
+    <link rel="stylesheet" href="../css/herobase.css">
+    <link rel="stylesheet" href="../css/base.css">
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="logo"><a href="../../index.html">Villa Camino</a></div>
+        <ul tabindex="0" class="nav-links">
+            <li><a href="./booking.html">BOOKING</a></li>
+            <li><a href="./restaurant.html">RESTAURANT</a></li>
+            <li><a href="./Accessibility.html">TILGJENGELIGHET</a></li>
+            <li><a href="./topical.html">TOPICAL</a></li>
+            <li class="ctn"><a href="mailto:kontakt@villcamio.com">KONTAKT OSS</a></li>
+        </ul>
+        <img src="../img/menytopical.png" alt="Meny-ikon" class="menu-btn">
+    </nav>
+
+    <!-- hero -->
+    <section class="hero" tabindex="0">
+        <div class="hero-boks">
+            <h3>Meny</h3>
+            <h1>Restaurant Amore</h1>
+        </div>
+        <div class="linje1"></div>
+        <p>Bilde av: Pixabay</p>
+    </section>
+  
+
+    <!-- innhold -->
+    <section tabindex="0" class="Tekst-container">
+        <h2>Vår meny</h2>
+        <div class="linje"></div>
+        <p> I vår fine restaurant Amore vil du få en smakebit av hva Italia har å by på, med mat laget av kun lokale råvarer, og med våre
+            egne oppskrifter. Og ikke glem - vårt unike vinkart er bestående av viner som er dyrket, produsert og lagret på vår egne idylliske vingård.</p>
+    </section>
+
+    <!--antipasti-->
+    <section tabindex="0" class="container-antipasti">
+        <div class="linje-loddrett1"></div>
+        <ul>
+            <h3>Antipasti</h3>
+            <li>Parmaskinke 169,-</li>
+            <p>Parmaskinke, melon, bøffelmozzarella og focaccia</p>
+            <p class="allergener">Allergener: Hvetegluten i focaccia, laktose</p>
+            <li>Caprese 149,-</li>
+            <p>Cherrytomater med basilikum, bøffelmozzarella, ekstra jomfru olivenolje og focaccia</p>
+            <p class="allergener">Allergener: Laktose, sulfitt, hvetegluten i focaccia</p>
+        </ul>
+        <div class="antipasti-bilde">
+            <p>Bilde av: Amar Preciado</p>
+        </div>
+    </section>
+
+    <!--hovedretter-->
+    <section tabindex="0" class="container-hovedretter">
+        <div class="linje-loddrett2"></div>
+        <ul>
+            <h3>Hovedretter</h3>
+            <li>Paradella 219,-</li>
+            <p>Bred båndpasta med ragú av langtidskokt kalveskank, gremolata og parmesan</p>
+            <p class="allergener">Allergener: Hvetegluten, sulfitt, selleri, laktose og egg</p>
+            <li>Parma 229,-</li>
+            <p>Tomatsaus, fersk mozzarella, parmaskinke, parmesan, pinjekjerner</p>
+            <p class="allergener">Allergener: Hvetegluten, sulfitt, laktose</p>
+            <li>Margaritha 199,-</li>
+            <p>Tomatsaus, mozzarella og fersk basilikum</p>
+            <p class="allergener">Allergener:Hvetegluten, laktose</p>
+        </ul>
+        <div class="hovedretter-bilde">
+            <p>Bilde av: Doğu Tuncer</p>
+        </div>
+    </section>
+
+    <!--desserter-->
+    <section tabindex="0" class="container-desserter">
+        <div class="linje-loddrett1"></div>
+        <ul>
+            <h3>Desserter</h3>
+            <li>Panna Cotta 179,-</li>
+            <p>Klassisk italiensk fløtepudding med pasjonsfruktsorbet</p>
+            <p class="allergener">Allergener: Laktose, pistasjnøtter</p>
+            <li>Tiramisu 179,-</li>
+            <p>Champagnekjeks med Havana Club rom, espresso, mascarponekrem og sjokolade</p>
+            <p class="allergener">Allergener: Laktose</p>
+        </ul>
+        <div class="desserter-bilde">
+            <p>Bilde av: Anastasia Belousova</p>
+        </div>
+    </section>
+
+    <!--drikke-->
+    <section class="container-drikke" tabindex="0">
+        <div class="linje-loddrett2"></div>
+        <ul>
+            <h3>Drikke</h3>
+            <li>Rossini</li>
+            <p class="margin-drikke">Prosecco med jordbærpuré 159,-</p>
+            <li>Mineralvann</li>
+            <p>Sprite, Coca Cola, Fanta 49,-</p>
+            <p>Eplejuice 39,-</p>
+            <p class="margin-drikke">Iste 49,-</p>
+            <li>Kaffe</li>
+            <p>Cappucino 49,-</p>
+            <p>Latte 49,-</p>
+            <p>Americano 39,-</p>
+            <p>Espresso 29,-</p>
+            <p class="vinkart"> Spør servitøren din om eget vinkart.</p>
+        </ul>
+        <div class="drikke-bilde">
+            <p>Bilde av: Grape Things</p>
+        </div>
+    </section>
+
+    <button tabindex="0">
+        <a href="mailto:kontakt@villcamio.com">Kontakt oss for booking nå!</a>
+    </button>
+    
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector ('.nav-links')
+
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+
+<!-- footer-->
+<footer class="footer">
+    <div class="footer-venstre">
+        <a href="../../index.html"><h3>Villa<span>Camino</span></h3></a>
+        <div tabindex="0" class="footer-links">
+            <a href="./index.html" class="link-1">Hjem</a>
+            <a href="./booking.html">Booking</a>
+            <a href="./restaurant.html">Restaurant</a>
+            <a href="./topical.html">Topical</a>
+            <a href="./Accessibility.html">Tilgjengelighet</a>
+        </div>
+        <p tabindex="0">Åpningstider restaurant:</p>
+        <p tabindex="0">09.00-22.00(10.00-01.00)</p>
+    </div>
+
+    <div class="footer-midten">
+            <p tabindex="0"><span>1234 Fiesole</span> Toscana, Italia</p>
+            <p tabindex="0">+123456578</p>
+            <i tabindex="0" class="mail-adresse"></i>
+            <p><a href="mailto:kontakt@villacamino.com">kontakt@villacamino.com</a></p>
+        </div>
+        
+
+    <div class="footer-høyre">
+        <div class="footer-om-oss">
+            <h4 tabindex="0">Om oss</h4>
+            <p tabindex="0">Villa Camino er en nydelig norskeid villa i Toscana, Italia. Vi tilbyr blant annet booking av bryllup, lokaler for arrangementer, vinsmaking, underholdning og fantastisk mat fra vår egen restaurant, ristorante Amore. Villa Camino er perfekt for de som ønsker en vakker plass å holde sitt arrangement.</p>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,317 @@
+h1, h2, h3, h4, ul, h3{ /*funker på accsessibility og restaurant*/
+    font-size: 40px;
+    font-weight: 600;
+}
+
+p, a { /*funker på accsessibility og restaurante*/
+    font-size: 20px;
+}
+
+img{
+    transition: transform .3s ease;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+/*navbar*/
+.logo{
+    color: var(--farge4);
+    text-shadow: 2px 2px 5px var(--farge5);
+}
+
+.nav-links li{
+    color: var(--farge4);
+}
+
+/* hero-bilde*/
+.hero {
+    background-image: linear-gradient(#383434, #151414c8), url(https://images.pexels.com/photos/4360899/pexels-photo-4360899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+
+/* "Veien mot et universalt og inkluderende design - start */
+.Tekst-container1{
+    background-color: var(--farge4);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 20px;
+}
+
+.Tekst-container1 a{
+    font-size: 18px;
+    color: var(--farge6);
+}
+  
+.Tekst-container1 a:hover{
+    font-weight: bolder;
+}
+ .Tekst-container1 span{
+    font-style: italic;
+}
+ 
+
+
+.Tekst-container1 h2{
+    width: 80%;
+    margin-top: 60px;
+    text-align: center;
+    background-color: transparent;
+    margin-bottom: 15px;
+}
+
+.Tekst-container1 p{
+    width: 60%;
+    text-align: center;
+    align-content: center;
+    margin-bottom: 40px;
+    background-color: transparent;
+}
+
+/* "Veien mot et universalt og inkluderende design  - slutt */
+/* bilde og introduksjonstekst - start*/
+
+.databilde-tekst-container{
+    background-color: var(--farge1);
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.databilde-tekst-container img{
+    background-size: cover;
+    background-position: center;
+    margin-top: -40px;
+    margin-bottom: 30px;
+    /*mix-blend-mode:multiply;*/
+    width: 200px;
+    height: 150px;
+
+}
+
+.databilde-tekst-container :hover{
+    transform: none;
+}
+
+.databilde-tekst-container p{
+    width: 60%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.linje2{
+    background-color: var(--farge5);
+    margin-top: 20px;
+    height: 1.7px;
+    width: 50%;
+    color: var(--farge6);
+}
+
+/* bilde og introduksjonstekst - slutt*/
+/* ikon etterfulgt av tekst - start */
+.Tekst-container2-boks1 img, .Tekst-container2-boks2 img{
+    height: 25px;
+    width: 25px;
+    /* få bort border */
+}
+
+.Tekst-container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    background-color: var(--farge1);
+
+}
+
+.Tekst-container2-boks1, .Tekst-container2-boks2{
+    padding-bottom: 60px;
+    text-align: center;
+    width: 50%;
+}
+  
+.Tekst-container2 a{
+    font-size: 20px;
+    color: var(--farge9);
+}
+
+  
+.Tekst-container2 a:visited{
+    color: var(--farge7)
+}
+  
+.Tekst-container2 a:hover{
+    font-weight: bolder;
+    color: var(--farge11)
+}
+  
+.Tekst-container2 a:active{
+    color: var(--farge14)
+}
+  
+ 
+ 
+
+
+/* ikon etterfulgt av tekst - slutt */
+/* bilde+tekst - start*/
+
+.Bilde-tekst-container1{
+    background-color: var(--farge4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Bilde-tekst-container1 h2{
+    margin-top: 60px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.Bilde-tekst-container1 img{
+    height: 25vmax;
+    width: 25vmax;
+    background-size: cover;
+    background-position: center;
+    box-shadow: -15px -15px 1px var(--farge3);
+    margin-top: 80px;
+    order: 0;
+}
+
+.Bilde-tekst-container1 p{
+    width: 50%;
+    margin-top: 80px;
+}
+
+
+.Bilde-tekst-container2{
+    background-color: var(--farge4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Bilde-tekst-container2 img{
+     height: 25vmax;
+    width: 25vmax;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 15px -15px 1px var(--farge6);
+    margin-top: 80px;
+    order: 0;
+}
+
+.Bilde-tekst-container2 p{
+    width: 50%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* bilde+tekst - slutt*/
+.footer{
+    margin-top: 50px;
+}
+
+
+/* for tablets*/
+@media only screen and (min-width: 669px) {
+    /* ikon etterfulgt av tekst - start */
+   
+
+    .Tekst-container2{
+        height: 750px;
+        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .Tekst-container2-boks1, .Tekst-container2-boks2{
+     padding: 20px;
+    }
+     /* ikon etterfulgt av tekst - slutt */
+     /* bilde+tekst - start*/
+
+
+    .Bilde-tekst-container1{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .Bilde-tekst-container1 img{
+        box-shadow: -30px -30px 1px var(--farge3);
+        order: 1;
+    }
+    
+    .Bilde-tekst-container1 p{
+        flex-basis: 25%;
+    }
+    
+ 
+    .Bilde-tekst-container2{
+        justify-content: space-evenly;
+        flex-direction: row;
+        margin-bottom: 130px;
+        margin-top: 80px;
+    }
+    
+    .Bilde-tekst-container2 img{
+        box-shadow: 30px -30px 1px var(--farge6);
+        order: 0;
+    }
+    
+    .Bilde-tekst-container2 p{
+        flex-basis: 25%;
+    }
+
+    /* bilde+tekst - slutt*/
+}
+
+
+
+/*for laptop*/
+@media only screen and (min-width: 833px) {
+    .bilde{
+        height: 300px;
+        width: 450px;
+        margin-top: 50px;
+    }
+
+    .Tekst-container1 p{
+        width: 40%;
+    }
+
+    .databilde-tekst-container{
+        height: 500px;
+    }
+    .Tekst-container2{
+        height: 330px;
+        align-items: center;
+        height: 650px;
+    }
+
+    .Tekst-container2-boks1, .Tekst-container2-boks2{
+        flex-basis: 40%;
+    }
+
+    .databilde-tekst-container{
+        margin-bottom: -100px;
+    }
+    .databilde-tekst-container p{
+        width: 40%;
+    }
+
+}

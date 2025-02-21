@@ -1,0 +1,233 @@
+
+/* Navbar start */
+.logo{
+    color: var(--farge4);
+    text-shadow: none;
+    font-size: 2rem;
+    font-weight: 1200;
+}
+
+.nav-links li{
+    color: var(--farge11);
+}
+.navbar{
+    background-color: var(--farge11);
+}
+/* navbar slutt */
+
+/*forsidebilde start*/
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/villaen.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content{
+    margin-bottom: 150px;
+    color: var(--farge4);
+    text-align: center;
+    background: linear-gradient(#38343497, #15141471);
+    padding: 40px;
+    border-radius: 350px;
+}
+.header-content h1{
+    font-size: 9vmin;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px var(--farge5);
+
+}
+.header-content h2{
+    font-size: 4vmin;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+.linje{
+    width: 150px;
+    height: 4px;
+    background: var(--farge4);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+/*forsidebilde slutt*/
+
+/* velkommen til oss*/ 
+h4{
+    font-size: 3vmin;
+    color: var(--farge4);
+    margin: 20px auto;
+}
+p{
+    position: relative;
+    justify-content: space-between;
+    font-size: 2.3vmin;
+    margin: 20px auto;
+    color: var(--farge2);
+    padding: 0px 30px;
+}
+.tittel h2{
+    color: var(--farge2);
+    position: relative;
+    font-size: 60px;
+    margin-top: 40px;
+    padding: 0px 40px;
+    font-weight: bolder;
+    text-align: center;
+}
+hr{
+    border: 0.5px solid var(--farge7);
+    margin-top: 10px;
+}
+.galleri{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(20, 5vw);
+    grid-gap: 30px;
+}
+.galleri__bilde{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.galleri__bilde--1{
+    grid-column: 2/5;
+    grid-row: 2/5;
+}
+.galleri__bilde--2{
+    grid-column: 5/8;
+    grid-row: 2/5;
+}
+.galleri__bilde--3{
+    grid-column: 2/5;
+    grid-row: 10/13;
+}
+.galleri__bilde--4{
+    grid-column: 5/8;
+    grid-row: 10/13;
+}
+.galleri__bilde--5{
+    grid-column: 2/5;
+    grid-row: 13/16;
+}
+.galleri__bilde--6{
+    grid-column: 5/8;
+    grid-row: 13/16;
+}
+.bryllup-tekst{
+   grid-column: 3/8;
+   grid-row: 5/8;
+}
+.vinsmaking-tekst{
+    grid-column: 3/8;
+    grid-row: 16/19;
+}
+.bildecredit, .bildecredit1{
+    position: relative;
+    width: 100%;
+    color: var(--farge5);
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+.bildecredit{
+    top: -22px; 
+}
+.bildecredit1{
+    top: -16px;
+}
+.vinsmaking-tekst h2, .bryllup-tekst h2{
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 25px;
+}
+img{
+    transition: transform .3s ease;
+}
+img:hover{
+    transform: scale(1.05);
+    display: block;
+}
+
+.ctn:hover{
+    text-shadow: none;
+    font-weight: 600;
+    background-color: var(--farge3);
+    box-shadow: 2px 2px 4px var(--farge2);
+    border-radius: 30px;
+    padding: 8px 15px;
+}
+/*grid slutt*/
+
+
+
+/*desktop*/
+@media only screen and (min-width:850px){
+    .navbar{
+        color:var(--farge11);
+        padding: 30px;
+    }
+    .logo{
+        text-shadow: 2px 2px 5px var(--farge5);
+
+    }
+    .nav-links li{
+        color: var(--farge4);
+    }
+    /*grid start*/
+    .galleri{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(15, 5vw);
+        grid-gap: 15px;
+        position: relative;
+    }   
+    .galleri__bilde{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .galleri__bilde--1{
+        grid-column: 2/5;
+        grid-row: 2/6;
+    }
+    .galleri__bilde--2{
+        grid-column: 5/8;
+        grid-row: 2/6;
+    }
+    .galleri__bilde--3{
+        grid-column: 5/8;
+        grid-row: 8/11;
+    }
+    .galleri__bilde--4{
+        grid-column: 8/11;
+        grid-row: 8/11;
+    }
+    .galleri__bilde--5{
+        grid-column: 5/8;
+        grid-row: 11/14;
+    }
+    .galleri__bilde--6{
+        grid-column: 8/11;
+        grid-row: 11/14;
+    }
+    .bryllup-tekst{
+        grid-column: 8/12;
+        grid-row: 2/7;
+    }
+    .vinsmaking-tekst{
+        grid-column: 2/5;
+         grid-row: 8/12;
+    }
+    
+    
+}
+
+
+

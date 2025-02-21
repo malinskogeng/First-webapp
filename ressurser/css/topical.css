@@ -1,0 +1,210 @@
+
+/*desktop view*/
+
+/* Navbar */
+.logo{
+    color: var(--farge4);
+    text-shadow: 2px 2px 5px var(--farge5);
+}
+
+.nav-links li{
+    color:var(--farge8);
+}
+.nav-links .ctn{
+    color: var(--farge4);
+}
+/* navbar slutt */
+
+h1{
+    font-size: 5vmax;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    color: var(--farge4);
+    text-shadow: 2px 2px 5px var(--farge5);
+}
+header p{
+    position: absolute;
+    bottom: 30px;
+    color: var(--farge4);
+    font-size: 1.2vmax;
+    text-shadow: 2px 2px 5px var(--farge5);
+}
+header{
+    background: linear-gradient(#38343497, #15141471);
+    border-radius: 350px;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--farge4);
+    text-align: justify;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.avsnitt{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    font-weight: 200;
+}
+
+.avsnitt>*:first-child {
+    width: 60vw;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 2rem;
+
+    overflow-y: auto;
+    max-height: 100vh;
+
+    box-shadow: inset 0 0 0 200px black(255 255 255 / 5%);
+    padding: 1rem;
+    mix-blend-mode: hard-light; 
+}
+
+#page0 > header {
+    padding: 70px;
+    text-align: center;
+}
+
+.side {
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: fixed;
+    background-size: contain;
+}
+#page0 {
+    background-attachment: scroll;
+    box-shadow: none;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/lys.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#page1{
+    background: url(../img/personligheten.webp) right center no-repeat, url(../img/grønn.jpg) center no-repeat; /*fotograf: Jana Kukebal*/
+   
+}
+#page2{
+    background: url(../img/pc.webp) right center no-repeat, url(../img/grønn1.jpg) center no-repeat; /*fotograf: Karolina Grabowska*/
+    
+}
+#page3{
+    background: url(../img/losningen.jpg) right center no-repeat, url(../img/grønn2.webp) center no-repeat; /*fotograf: eberhard grossgasteiger*/
+}
+#page4{
+    background: url(../img/les.jpg) right center no-repeat, url(../img/grønn4.jpg) center no-repeat;
+   
+}
+#page1, #page2, #page3, #page4{
+    background-size: 35vw, cover;
+    padding: 0;
+    z-index: 0;
+    justify-content: space-between;
+}
+.bakgrunn{
+    background: linear-gradient(#383434, #151414c8);
+}
+hr{
+    border: 0.5px solid var(--farge4);
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+p{
+    text-align: justify; 
+}
+
+.barrierene, .barrierene li{
+    float: inline-start;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: block;
+}
+
+
+p, .barrierene li{
+    color: var(--farge4);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.barrierene li:hover{
+    transform: none;
+}
+.bildecredit p{
+    top: -10px;
+}
+
+#page4 p .linker-topical{
+    font-size: 40px;
+    flex-direction: column;
+}
+
+.linker-topical{
+    flex-direction: column;
+    display: block;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+#page4 .linker-topical{
+    text-decoration: underline;
+    color: var(--farge4);
+    flex-direction: column;
+    float: inline-start;
+
+}
+#page4 .linker-topical:visited{
+    color: pink;
+}
+
+#page4 .linker-topical:hover{
+    color: yellow;
+}
+
+#page4 .linker-topical:active{
+    color: orange;
+}
+
+
+/*mobile device*/
+@media only screen and (max-width:850px){
+    .nav-links{
+        background: #004d4d;
+    }
+    .nav-links li{
+        color: var(--farge4);
+    }
+    p{
+        text-align: left;
+    }
+    .avsnitt>*:first-child{
+        width: 90vw;
+    }
+    #page1{
+        background: url(../img/grønn.jpg);
+    }
+    #page2{
+        background: url(../img/grønn1.jpg);
+    }
+    #page3{
+        background: url(../img/grønn2.webp);
+    }
+    #page4{
+        background: url(../img/grønn4.jpg);
+    }
+}
+
+
+

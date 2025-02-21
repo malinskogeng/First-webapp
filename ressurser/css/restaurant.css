@@ -1,0 +1,187 @@
+.logo{
+    color: var(--farge4);
+    text-shadow: 2px 2px 5px var(--farge5);
+}
+
+.nav-links li{
+    color: var(--farge4);
+}
+
+h1, h2 {
+    font-weight: 600;
+}
+
+h3{
+    font-size: 60px;
+}
+
+
+ul li:hover{
+    color: var(--farge2);
+    text-shadow: none;
+}
+
+/* Hero-bilde*/
+
+ .hero{
+    background-image: linear-gradient(#383434, #151414c8), url(https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+ 
+/* For mobil*/
+/* Introduksjon til restauranten start*/
+}
+ .Tekst-container{
+    background-color: var(--farge4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--farge1);
+    padding: 100px 0 150px 0;
+}
+
+.Tekst-container p{
+    width: 60%;
+    text-align: center;
+    align-content: center;
+}
+
+.linje{
+    margin-bottom: 10px;
+    width: 150px;
+    height: 1.6px;
+    background-color:var(--farge5)(0, 0, 0);
+}
+
+/* Introduksjon til restauranten slutt*/
+/* Meny start*/
+
+.container-antipasti, .container-hovedretter, .container-desserter, .container-drikke {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+}
+
+.antipasti-bilde,  .desserter-bilde {
+    height: 40vmin;
+    width: 70vmin;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px -10px 1px var(--farge3);
+}
+
+.hovedretter-bilde, .drikke-bilde {
+    height: 40vmin;
+    width: 70vmin;
+    background-size: cover;
+    background-position: center;
+    box-shadow: -10px -10px 1px var(--farge1);    
+    margin-top: 20px;
+}
+
+.container-antipasti ul, .container-hovedretter ul,.container-desserter ul,.container-drikke ul{
+    width: 70%;
+}
+
+.antipasti-bilde{
+    background-image: url(https://images.pexels.com/photos/11121658/pexels-photo-11121658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    color: var(--farge4);
+}
+.hovedretter-bilde{
+    background-image: url(https://images.pexels.com/photos/14538480/pexels-photo-14538480.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    color: var(--farge4);
+}
+
+.desserter-bilde{
+    background-image: url(https://images.pexels.com/photos/5228768/pexels-photo-5228768.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    color: var(--farge5);
+}
+
+.drikke-bilde{
+    background-image: url(https://images.pexels.com/photos/2954924/pexels-photo-2954924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    color: var(--farge5);
+}
+
+.antipasti-bilde p, .hovedretter-bilde p, .desserter-bilde p, .drikke-bilde p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    width: 90px;
+    font-size: 12px;
+    line-height: 1;
+    margin: 5px;
+    margin-top: 30px;
+}
+
+.container-antipasti ul li, .container-hovedretter ul li, .container-desserter ul li, .container-drikke ul li {
+    font-family: Copperplate;
+}
+
+ /* allergener og vinkart */
+.allergener, .vinkart {
+   font-style: italic;
+   margin: 20px;
+}
+
+.footer{
+    margin-top: 50px;
+}
+ 
+/*meny slutt*/
+/* for tablet og desktop*/
+ @media (min-width: 680px) {
+/* Introduksjon til retsauranten start */
+    .Tekst-container p{
+        width: 35%;
+    }
+
+/* Introduksjon til retsauranten slutt */
+/* meny start*/
+    .container-antipasti, .container-hovedretter, .container-desserter, .container-drikke {
+        flex-direction: row;
+        padding: 50px;
+    }
+
+    .ul, h3{
+        font-weight: 100;
+    }
+    
+    .container-antipasti ul,  .container-desserter ul {
+        flex-basis: 50%;
+        margin-right: 40px;
+    }
+
+    .container-hovedretter ul, .container-drikke ul{
+        flex-basis: 50%;
+        justify-content: center;
+        order: 1;
+        margin-left: 80px;
+    }
+
+    .hovedretter-bilde, .drikke-bilde {
+        height: 60vmin;
+        width: 30vmin;
+        box-shadow: -30px -30px 1px var(--farge3);
+    }
+
+    .antipasti-bilde, .desserter-bilde {
+        height: 60vmin;
+        width: 30vmin;
+        box-shadow: 30px -30px 1px var(--farge3);
+    }
+
+    .linje-loddrett1{
+        height: 500px;
+        flex-basis: 2px;
+        background-color: var(--farge5);
+        margin-right: 40px;
+    }
+
+    .linje-loddrett2{
+        height: 500px;
+        flex-basis: 2px;
+        background-color: var(--farge5);
+        margin-left: 40px;
+        order: 3;
+    }
+    /*meny slutt*/
+}
